@@ -8,7 +8,7 @@ type HeaderProps = {
 };
 export const Header = ({ onSubscribeClick }: HeaderProps) => {
   return (
-    <div className="w-full  flex lg:flex-row lg:justify-between lg:items-start flex-col items-center py-8 gap-8 lg:px-8">
+    <div className="w-full flex lg:flex-row lg:justify-between lg:items-start flex-col items-center py-8 gap-8 lg:px-8 px-2">
       <Logo />
       <div className="flex flex-col items-center gap-3">
         <Button

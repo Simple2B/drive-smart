@@ -5,5 +5,5 @@ type TitleProps = {
 };
 
 export const Title = ({ text }: TitleProps) => {
-  return <h1 className="text-title text-center">{text}</h1>;
+  return <h1 className="text-title text-center px-2">{text}</h1>;
 };
