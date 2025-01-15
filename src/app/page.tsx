@@ -1,7 +1,8 @@
 import { Header } from "./components/Header";
 import { CentralBlock } from "./components/CentralBlock";
 import { FeatureBlock } from "./components/FeatureBlock";
-import { additionalFeatures, features } from "./constants";
+import { additionalFeatures, features } from "../constants/constants";
+import { JoinBlock } from "./components/JoinBlock";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
         title="Use DriveSmart to build your wealth"
         features={additionalFeatures}
       />
+      <JoinBlock />
+
       {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Header />
       </main> */}
