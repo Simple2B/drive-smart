@@ -4,10 +4,12 @@ import { FeatureBlock } from "./components/FeatureBlock";
 import { additionalFeatures, features } from "../constants/constants";
 import { JoinBlock } from "./components/JoinBlock";
 import { Footer } from "./components/Footer";
+import RunningLine from "./components/RunningLine";
 
 export default function Home() {
   return (
     <div>
+      <RunningLine />
       <Header />
       <CentralBlock />
       <FeatureBlock
