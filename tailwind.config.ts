@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#A07347",
+        primaryDark: "#6D4C2E",
+      },
+      fontSize: {
+        title: "56px",
       },
     },
   },
