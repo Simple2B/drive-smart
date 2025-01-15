@@ -1,6 +1,7 @@
-import Image from "next/image";
 import { Header } from "./components/Header";
 import { CentralBlock } from "./components/CentralBlock";
+import { FeatureBlock } from "./components/FeatureBlock";
+import { additionalFeatures, features } from "./constants";
 
 export default function Home() {
   return (
@@ -8,6 +9,14 @@ export default function Home() {
     <div>
       <Header />
       <CentralBlock />
+      <FeatureBlock
+        title="Why choose DriveSmart to hire your car"
+        features={features}
+      />
+      <FeatureBlock
+        title="Use DriveSmart to build your wealth"
+        features={additionalFeatures}
+      />
       {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Header />
       </main> */}
