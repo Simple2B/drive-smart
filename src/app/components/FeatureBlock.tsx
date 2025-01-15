@@ -1,5 +1,5 @@
 import React from "react";
-import { IFeature } from "../constants";
+import { IFeature } from "../../constants/constants";
 import { Feature } from "./Feature";
 import { Title } from "./Title";
 

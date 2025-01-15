@@ -4,6 +4,11 @@ import carTailor from "../../public/icons/carTailor.svg";
 import carMatch from "../../public/icons/carMatch.svg";
 import carInvest from "../../public/icons/carInvest.svg";
 import carKey from "../../public/icons/carKey.svg";
+import facebook from "../../public/icons/facebook.svg";
+import linkedin from "../../public/icons/linkedin.svg";
+import tweeter from "../../public/icons/tweeter.svg";
+
+import { FACEBOOK_LINK, LINKEDIN_LINK, TWEETER_LINK } from "./service";
 
 export type IFeature = {
   name: string;
@@ -47,5 +52,29 @@ export const additionalFeatures: IFeature[] = [
     description:
       "Take advantage of our unique investment opportunities.  Enjoy an impressive 22% annual yield with upfront costs as low as 20,000 Dhs",
     icon: carInvest,
+  },
+];
+
+export type ISocialMedia = {
+  name: string;
+  link: string;
+  icon: StaticImageData;
+};
+
+export const socialMedia: ISocialMedia[] = [
+  {
+    name: "Twetter",
+    link: TWEETER_LINK,
+    icon: tweeter,
+  },
+  {
+    name: "LinkedIn",
+    link: LINKEDIN_LINK,
+    icon: linkedin,
+  },
+  {
+    name: "Facebook",
+    link: FACEBOOK_LINK,
+    icon: facebook,
   },
 ];
