@@ -9,7 +9,7 @@ export const Header = () => {
       <Logo />
       <div className="flex flex-col items-center gap-3">
         <Button text="Subscribe & Receive a discount" onClick={() => {}} />
-        <p className="text-center w-full max-w-xs text-sm">
+        <p className="text-center w-full max-w-xs 2xl:text-base text-sm">
           <strong>Discounted rates</strong> for the first 100 subscribers
           Subscribe to be issued with the{" "}
           <strong>free DriveSmart Starter Pack</strong>

@@ -11,7 +11,7 @@ export const JoinBlock = () => {
       <div className="px-5 md:px-24 flex flex-col gap-5 max-w-[800px]">
         <Title text={"Join a Thriving Community"} />
         <SubscribeForm />
-        <p className="text-sm text-center">
+        <p className="text-sm text-center 2xl:text-base">
           We take your privacy seriously. Any personal information you provide
           on this site <strong>will be securely stored</strong> and{" "}
           <strong>only used for the purpose of delivering our services.</strong>{" "}
