@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { IFeature } from "../constants";
+import { IFeature } from "../../constants/constants";
 
 type FeatureProps = {
   feature: IFeature;
