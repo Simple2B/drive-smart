@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - 127.0.0.1:3002:3000
+    env_file:
+      - .env
+    labels:
+      - "traefik.enable=true"
+      # - "traefik.http.routers.drive-smart.rule=Host(`drive-smart.simple2b.net`)"
+      # - "traefik.http.routers.drive-smart.tls=true"
+      # - "traefik.http.routers.drive-smart.tls.certresolver=myresolver"
