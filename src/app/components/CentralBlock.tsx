@@ -6,7 +6,11 @@ import { Button } from "./Button";
 import PhoneLaptop from "../../../public/phone-laptop.jpeg";
 import PhoneMobile from "../../../public/phone-mobile.jpeg";
 
-export const CentralBlock = () => {
+type CentralBlockProps = {
+  onSubscribeClick: () => void;
+};
+
+export const CentralBlock = ({ onSubscribeClick }: CentralBlockProps) => {
   return (
     <div className="w-full flex flex-col items-center gap-8">
       <Title text="Ride, Earn, and Thrive!" />
@@ -17,7 +21,7 @@ export const CentralBlock = () => {
       <Button
         text="Subscribe for early opportunities"
         isColored
-        onClick={() => {}}
+        onClick={onSubscribeClick}
       />
       <picture>
         <source srcSet={PhoneMobile.src} media="(max-width: 767px)" />
