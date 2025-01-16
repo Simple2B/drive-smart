@@ -1,6 +1,10 @@
 services:
   app:
-    build: .
+    build:
+      context: "."
+      platforms:
+        - "linux/amd64"
+    image: simple2b/drive-smart
     ports:
       - 127.0.0.1:3000:3000
     env_file:
