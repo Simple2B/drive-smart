@@ -5,6 +5,6 @@ services:
       - .env
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.drivesmartuae.rule=Host(`drivesmartuae.com`) || Host(`www.drivesmartuae.com`)"
+      - "traefik.http.routers.drivesmartuae.rule=Host(`drivesmartuae.com`) || Host(`www.drivesmartuae.com`) || Host(`drive-smart.simple2b.net`)"
       - "traefik.http.routers.drivesmartuae.tls=true"
       - "traefik.http.routers.drivesmartuae.tls.certresolver=myresolver"
