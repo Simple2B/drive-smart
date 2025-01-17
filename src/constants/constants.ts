@@ -4,11 +4,17 @@ import carTailor from "../../public/icons/carTailor.svg";
 import carMatch from "../../public/icons/carMatch.svg";
 import carInvest from "../../public/icons/carInvest.svg";
 import carKey from "../../public/icons/carKey.svg";
-import facebook from "../../public/icons/facebook.svg";
-import linkedin from "../../public/icons/linkedin.svg";
-import tweeter from "../../public/icons/tweeter.svg";
+// import facebook from "../../public/icons/facebook.svg";
+// import linkedin from "../../public/icons/linkedin.svg";
+// import instagram from "../../public/icons/instagram.svg";
+import x from "../../public/icons/x.svg";
 
-import { FACEBOOK_LINK, LINKEDIN_LINK, TWEETER_LINK } from "./service";
+import {
+  // FACEBOOK_LINK,
+  // INSTAGRAM_LINK,
+  // LINKEDIN_LINK,
+  X_LINK,
+} from "./service";
 
 export type IFeature = {
   name: string;
@@ -63,18 +69,23 @@ export type ISocialMedia = {
 
 export const socialMedia: ISocialMedia[] = [
   {
-    name: "Twetter",
-    link: TWEETER_LINK,
-    icon: tweeter,
+    name: "X",
+    link: X_LINK,
+    icon: x,
   },
-  {
-    name: "LinkedIn",
-    link: LINKEDIN_LINK,
-    icon: linkedin,
-  },
-  {
-    name: "Facebook",
-    link: FACEBOOK_LINK,
-    icon: facebook,
-  },
+  // {
+  //   name: "LinkedIn",
+  //   link: LINKEDIN_LINK,
+  //   icon: linkedin,
+  // },
+  // {
+  //   name: "Instagram",
+  //   link: INSTAGRAM_LINK,
+  //   icon: instagram,
+  // },
+  // {
+  //   name: "Facebook",
+  //   link: FACEBOOK_LINK,
+  //   icon: facebook,
+  // },
 ];
