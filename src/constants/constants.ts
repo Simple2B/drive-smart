@@ -25,7 +25,7 @@ export type IFeature = {
 export const features: IFeature[] = [
   {
     name: "Best value for money",
-    description: "Best value for money",
+    description: "Hire cars up to 25% lower than market",
     icon: carEarn,
   },
   {
