@@ -1,3 +1,12 @@
 {
-  "cSpell.words": ["certresolver", "drivesmartuae", "myresolver"]
+  "cSpell.words": [
+    "certificatesresolvers",
+    "certresolver",
+    "drivesmartuae",
+    "exposedbydefault",
+    "httpchallenge",
+    "myresolver",
+    "redirections",
+    "websecure"
+  ]
 }

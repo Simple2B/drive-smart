@@ -1,0 +1,36 @@
+services:
+  app:
+    image: simple2b/drive-smart
+    env_file:
+      - .env
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.drivesmartuae.rule=Host(`drivesmartuae.com`) || Host(`www.drivesmartuae.com`) || Host(`drive-smart.simple2b.org`)"
+      - "traefik.http.routers.drivesmartuae.tls=true"
+      - "traefik.http.routers.drivesmartuae.tls.certresolver=myresolver"
+
+  traefik:
+    image: traefik:v2.9
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Certificates
+      - "./data/traefik/:/data"
+    command:
+      - "--providers.docker"
+      - "--providers.docker.exposedbydefault=false"
+      # Certificates
+      - "--entryPoints.websecure.address=:443"
+      - "--entryPoints.web.address=:80"
+      - "--certificatesResolvers.myresolver.acme.email=simple2b.info@gmail.com"
+      - "--certificatesResolvers.myresolver.acme.storage=/data/acme.json"
+      - "--certificatesresolvers.myresolver.acme.caServer=https://acme-v02.api.letsencrypt.org/directory"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge=true"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
+      # Redirects http -> https
+      - "--entrypoints.web.http.redirections.entrypoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
+    labels:
+      - "traefik.enable=true"
