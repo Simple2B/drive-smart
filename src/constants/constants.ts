@@ -6,12 +6,12 @@ import carInvest from "../../public/icons/carInvest.svg";
 import carKey from "../../public/icons/carKey.svg";
 // import facebook from "../../public/icons/facebook.svg";
 // import linkedin from "../../public/icons/linkedin.svg";
-// import instagram from "../../public/icons/instagram.svg";
+import instagram from "../../public/icons/instagram.svg";
 import x from "../../public/icons/x.svg";
 
 import {
   // FACEBOOK_LINK,
-  // INSTAGRAM_LINK,
+  INSTAGRAM_LINK,
   // LINKEDIN_LINK,
   X_LINK,
 } from "./service";
@@ -78,11 +78,11 @@ export const socialMedia: ISocialMedia[] = [
   //   link: LINKEDIN_LINK,
   //   icon: linkedin,
   // },
-  // {
-  //   name: "Instagram",
-  //   link: INSTAGRAM_LINK,
-  //   icon: instagram,
-  // },
+  {
+    name: "Instagram",
+    link: INSTAGRAM_LINK,
+    icon: instagram,
+  },
   // {
   //   name: "Facebook",
   //   link: FACEBOOK_LINK,
