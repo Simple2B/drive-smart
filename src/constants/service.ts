@@ -5,4 +5,4 @@ export const FACEBOOK_LINK = "https://facebook.com";
 export const LINKEDIN_LINK = "https://linkedin.com";
 export const INSTAGRAM_LINK = "https://www.instagram.com/drivesmartuae/";
 
-export const COMING_IN = "May 2025";
+export const COMING_IN = "2025";
